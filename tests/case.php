@@ -24,7 +24,12 @@
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
  */
 
-require_once 'WorkflowDatabaseTiein/tests/case.php';
+$dir = realpath(__DIR__."/../../WorkflowDatabaseTiein/tests");
+if(!is_dir($dir)) {
+$dir = realpath(__DIR__."/../../workflow-database-tiein/tests");
+}
+$case = "$dir/case.php";
+require_once $case;
 
 /**
  * @package WorkflowEventLogTiein
