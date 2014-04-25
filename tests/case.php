@@ -24,9 +24,17 @@
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
  */
 
-$dir = realpath(__DIR__."/../../WorkflowDatabaseTiein/tests");
+/**
+ * Search for the dependent package's test loader. If we are in the vendor 
+ * directory, it is in a sister directory. If we are the main package, it is in 
+ * the subordinate vendor/ directory. 
+ */
+$target = "workflow-database-tiein/tests";
+$parent = dirname(__DIR__);
+$grandparent = dirname($parent);
+$dir = "$parent/vendor/zetacomponents/$target";
 if(!is_dir($dir)) {
-$dir = realpath(__DIR__."/../../workflow-database-tiein/tests");
+    $dir = "$grandparent/$target";
 }
 $case = "$dir/case.php";
 require_once $case;

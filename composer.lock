@@ -260,7 +260,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:ewbarnard/WorkflowDatabaseTiein.git",
-                "reference": "bacc34d2c962a3fd6a01cc7ed999e0c259c87f38"
+                "reference": "0b34d51e2e40acf0dec561d8db07c41e0bce443a"
             },
             "require": {
                 "php": ">=5.3.0",
@@ -316,7 +316,7 @@
             ],
             "description": "Contains the database backend for the Workflow component.",
             "homepage": "https://github.com/zetacomponents",
-            "time": "2014-04-24 23:28:55"
+            "time": "2014-04-25 00:00:19"
         }
     ],
     "packages-dev": [
